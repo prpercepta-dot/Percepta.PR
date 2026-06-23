@@ -596,3 +596,32 @@ footer {
     align-items: flex-start;
   }
                          }
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: white;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-menu a {
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+}
